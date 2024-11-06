@@ -2,7 +2,7 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 #' Simple sum
-#' @param x a numeric vector
+#' @param x an armadillo vector
 #' @export
 calc_sum <- function(x) {
     .Call(`_VSCodeRcppDemo_calc_sum`, x)

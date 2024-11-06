@@ -4,9 +4,9 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "D:\\R\\R-4.2.3\\library\\Rcpp\\include",
-                "D:\\R\\R-4.2.3\\library\\RcppArmadillo\\include",
-                "D:\\R\\R-4.2.3\\include"
+                "D:\\R\\R-4.3.0\\library\\Rcpp\\include",
+                "D:\\R\\R-4.3.0\\library\\RcppArmadillo\\include",
+                "D:\\R\\R-4.3.0\\include"
             ],
             "defines": [],
             "compilerPath": "D:\\msys64\\mingw64\\bin\\gcc.exe",

@@ -4,7 +4,7 @@
         {
             "label": "debug",
             "type": "shell",
-            "command": "D:\\R\\R-4.2.3\\bin\\Rscript.exe ${workspaceFolder}\\.vscode\\debug.R",
+            "command": "D:\\R\\R-4.3.0\\bin\\Rscript.exe ${workspaceFolder}\\.vscode\\debug.R",
             "problemMatcher": []
         }
     ]

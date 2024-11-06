@@ -5,7 +5,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "D:\\R\\R-4.2.3\\bin\\x64\\Rscript.exe",
+            "program": "D:\\R\\R-4.3.0\\bin\\x64\\Rscript.exe",
             "args": [
                 "--vanilla",
                 "-e",

@@ -1,9 +1,16 @@
 # vscode-rcpp-demo
 
-This project is a minimal example of writing and debugging [Rcpp](http://www.rcpp.org/) in VSCode.
+This project is a combination of [vscode-rcpp-demo](https://github.com/renkun-ken/vscode-rcpp-demo) and [gdb_armadillo_helpers](https://github.com/darcamo/gdb_armadillo_helpers), hosting a minimal example of writing and debugging [Rcpp](http://www.rcpp.org/) in VScode in windows with pretty printers for armadillo vectors, matrices and cubes, as well as a few xmethods. 
 
-For writing and debugging [cpp11](https://cpp11.r-lib.org) in VSCode, you may
-go to [vscode-cpp11-demo](https://github.com/renkun-ken/vscode-cpp11-demo).
+Thank [Kun](https://renkun.me/) and [Darlan](https://github.com/darcamo) for developing such two useful workflows. 
+
+for autoloading: 
+- create a directory called anything you fancy in c:/users/yourusername, where yourusername is your Windows username. Now from the control panel invoke the environment variables dialog and create a new environment variable called HOME. Set that variable to the above folder by clicking browse for folder and navigating there. Put .gdbinit in there and use it to set any autoload or other behaviour as you choose. When GDB starts it will now look in that folder for a .gdbinit file and load it.
+
+for manually loading
+after activating debug mode, enter the following command in the debug console, this works for the current debugging thread only
+-exec source D:\cpp\HMCDM_FORGETTING\gdb_configuration\.gdbinit
+
 ## Preview
 
 * Code editing
@@ -12,11 +19,16 @@ go to [vscode-cpp11-demo](https://github.com/renkun-ken/vscode-cpp11-demo).
 
 * Debugging
 
-![Debugging](https://user-images.githubusercontent.com/4662568/71535254-8f2d2380-293f-11ea-85cc-0828234d3c26.gif)
+
 
 ## Configuration
 
-Before configuration, install VSCode [C/C++ extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools).
+If you are new to C++ and VScode, please refer to [C/C++ for Visual Studio Code](https://code.visualstudio.com/docs/languages/cpp) for detailed instruction.
+
+The following extensions need to be installed: 
+
+-[R](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)
+-[C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
 
 ### Code editing
 
@@ -56,8 +68,11 @@ You may need, initially, to run twice in debugging mode before environment varia
 
 For more debugging features, please visit [Debug C++ in Visual Studio Code](https://code.visualstudio.com/docs/cpp/cpp-debug).
 
-## More information
+### Pretty printer
 
-When properly configured, the Rcpp development environment is full-featured as general C/C++ development in VSCode.
+for autoloading,: 
+- create a directory called anything you fancy in c:/users/yourusername, where yourusername is your Windows username. Now from the control panel invoke the environment variables dialog and create a new environment variable called HOME. Set that variable to the above folder by clicking browse for folder and navigating there. Put .gdbinit in there and use it to set any autoload or other behaviour as you choose. When GDB starts it will now look in that folder for a .gdbinit file and load it.
 
-Please visit [C/C++ for Visual Studio Code](https://code.visualstudio.com/docs/languages/cpp) for more information.
+for manually loading
+after activating debug mode, enter the following command in the debug console, this works for the current debugging thread only
+-exec source D:\cpp\HMCDM_FORGETTING\gdb_configuration\.gdbinit
