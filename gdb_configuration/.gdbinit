@@ -1,2 +1,0 @@
-source D:\cpp\VSCODE-RCPP-DEMO-MASTER\gdb_configuration\gdb_armadillo_helpers\gdb_helpers\gdb_armadillo_printers.py
-source D:\cpp\VSCODE-RCPP-DEMO-MASTER\gdb_configuration\gdb_armadillo_helpers\gdb_helpers\gdb_std_complex_printer.py
