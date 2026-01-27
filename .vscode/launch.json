@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) Launch",
+            "name": "Rcpp debug with pretty printer",
             "type": "cppdbg",
             "request": "launch",
             "program": "D:\\R\\R-4.3.0\\bin\\x64\\Rscript.exe",
@@ -21,7 +21,18 @@
                     "description": "Enable pretty-printing for gdb",
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
+                },
+                {
+                    "description": "Add pretty printer path",
+                    "text": "python import sys, os; p=os.path.join(os.path.expandvars(r'${workspaceFolder}'),'gdb_configuration','gdb_armadillo_helpers','gdb_helpers'); p=p.replace('\\\\','/'); sys.path.insert(0,p); print('[GDB] sys.path added', p)",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Initialize printers",
+                    "text": "python import importlib; import init_printers; importlib.reload(init_printers)",
+                    "ignoreFailures": true
                 }
+
             ],
             "preLaunchTask": "debug"
         }
