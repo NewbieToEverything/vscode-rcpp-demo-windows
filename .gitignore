@@ -3,3 +3,4 @@
 .RData
 .vscode/.*
 .vscode/vscode-R/
+__pycache__/
