@@ -5,7 +5,7 @@
             "name": "Rcpp debug with pretty printer",
             "type": "cppdbg",
             "request": "launch",
-            "program": "D:\\R\\R-4.3.0\\bin\\x64\\Rscript.exe",
+            "program": "D:\\R\\R-4.5.2\\bin\\x64\\Rscript.exe",
             "args": [
                 "--vanilla",
                 "-e",
